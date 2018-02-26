@@ -1,4 +1,7 @@
-/*演示Node中的发布订阅模式*/
+/*
+ * 演示Node中的发布订阅模式
+ * 本程序演示的是发布订阅模式中的events模块的EventEmitter类的基本用法
+ * */
 
 //get an EventEmitter object
 var EventEmitter = require('events').EventEmitter; 
@@ -10,7 +13,7 @@ event.on('some_event', function(arg1,arg2) {
   /*
    * EventEmitter 对象的方法补充:
    * 除了有on()方法外，还有:
-   * 1. once() 只响应一次事件;
+   * 1. once() 只响应一次事件:可以通过once()方法来解决 *事件雪崩* 问题
    * 2. addListener() 为指定事件添加一个监听器到监听器数组的尾部;
    * 3. removeListener(event,listener) 移出监听器
    * 4. listeners(event) 返回指定事件的监听器数组
@@ -26,6 +29,3 @@ setTimeout(function() {
 }, 1000);
 
 
-/**
- * 演示Promise/Deferred模式
- * */
