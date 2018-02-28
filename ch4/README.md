@@ -33,4 +33,13 @@ while(true){
 * Promise/Deferred 模式
 * 流程控制库
 
+### 文件说明
+
+|文件名|说明|
+|----|------|
+|emitter.js|EventEmitter演示|
+|inherits.js|演示js的继承机制|
+|coordination.js|多异步响应的回调协调|
+|promise.js|Promise/Deferred演示|
+
 
